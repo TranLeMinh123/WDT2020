@@ -1,0 +1,21 @@
+﻿ .input-not-icon {
+    color: #bbbbbb;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #DBDEFF;
+}
+
+.input-icon {
+    height: 36px;
+    color: #bbbbbb;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    border: 1px solid #DBDEFF;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 12px; 
+}

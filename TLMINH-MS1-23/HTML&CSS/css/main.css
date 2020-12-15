@@ -1,0 +1,45 @@
+﻿@import url('layout/content.css');
+@import url('layout/header.css');
+@import url('layout/menu.css');
+@import url('common/button.css');
+@import url('common/input.css');
+@import url('common/icon.css');
+@import url('common/table.css');
+
+body {
+    font-size: 13px;
+    font-family: GoogleSans-Regular;
+    font-style: normal;
+    margin:0px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #019160;
+    outline: 1px solid slategrey;
+}
+
+
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../content/font/GoogleSans-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-BoldItalic';
+    src: url('../content/font/GoogleSans-BoldItalic.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+    src: url('../content/font/GoogleSans-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Bold';
+    src: url('../content/font/GoogleSans-Bold.otf') format('opentype');
+}

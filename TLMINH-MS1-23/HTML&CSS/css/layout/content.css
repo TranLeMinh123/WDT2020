@@ -1,0 +1,90 @@
+﻿.content {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: calc(100% - 60px); 
+}
+
+/*header content*/
+.header-content{
+    display: flex;
+    height:60px;
+    align-items:center;
+}
+
+.title-content {
+    font-size: 20px;
+    padding: 16px;
+}
+
+.add-customer {
+    position:absolute;
+    right:16px ;
+    width: 200px;
+}
+
+/*content tool bar*/
+.content-tool-bar {
+    height: 40px;
+}
+
+.refesh-customer {
+    position:absolute;
+    right: 16px;
+    background-color: white;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.search-bar {
+    margin-left: 16px;
+}
+
+/*grid*/
+.grid {
+    height: calc(100% - 156px);
+    overflow: scroll;
+}
+
+
+/*paging-bar*/
+.content .paging-bar {
+    height: 56px;
+    display: flex;
+    align-items: center; 
+}
+
+.notice-left {
+    position:absolute;
+    left: 16px;
+}
+
+.notice-right {
+    position: absolute;
+    right: 16px; 
+}
+
+.page-direct {
+    display: flex;
+    margin: auto;
+}
+
+.page-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #E9EBEE;
+}
+
+.page-arrow {
+    height: 30px;
+    width:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+

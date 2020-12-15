@@ -1,0 +1,142 @@
+﻿.add-dialog {
+    overflow: hidden;
+    justify-content: normal;
+}
+
+/*up*/
+.up-dialog {
+    width: 700px;
+    height: 250px;
+    display: flex;
+    margin-left: 20px;
+}
+
+/*up left*/
+.avatar {
+    width: 190px;
+    height: 190px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 190px;
+    border: 1px solid #DBDEFF;
+}
+
+/*up right*/
+.up-input{
+    width: 480px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.up-input .line {
+    height: calc(100% / 3);
+    width: 480px;
+}
+
+.line .title-input{
+    display:flex;
+}
+
+.line .input-bar {
+    height: calc(100% / 3) ;
+}
+
+.up-dialog .title-input .title-left-side {
+    margin-left: 0px;
+}
+
+.up-dialog .title-input .title-right-side {
+    margin-left: 140px;
+}
+
+.input-bar .input-left-side {
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+}
+
+.input-bar .input-right-side {
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.input-bar .content-input {
+    width: 225px;
+    height: 100%;
+}
+
+.up-dialog .input-bar select {
+    border: 1px solid #BBBBBB;
+    width: 231px;
+    height: calc(100% + 3px);
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+ .ck-right {
+    margin-left: 10px;
+}
+
+ .ck-left {
+    margin-left: 18px;
+}
+
+ /*down dialog*/
+.down-dialog {
+    height: 250px;
+    margin-left: 20px;
+    width:700px;
+}
+
+.down-dialog .line {
+    height: calc(100% / 3);    
+}
+
+.down-dialog .line .content-input-left {
+    width: 435px;
+    height: 100%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #BBBBBB
+}
+
+.down-dialog .content-input-right {
+    width: 225px;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB
+}
+
+.down-dialog .title-input .title-left-side {
+    margin-left: 0px;
+}
+
+.down-dialog .title-input .title-right-side {
+    margin-left: 385px;
+}
+
+.down-dialog .content-input-address {
+    width: 677px;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+}
+
+/*button bar*/
+.button-bar {
+    height: 70px;
+    background-color: #BBBBBB;
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 0.5px;
+}
+
+.cancel-button {
+    position: absolute;
+    right:106px;
+}
+
+.save-button {
+    position: absolute;
+    right: 48px;
+}
+

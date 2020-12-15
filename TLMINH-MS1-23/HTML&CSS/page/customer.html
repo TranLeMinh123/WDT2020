@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../lib/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/dialog/customer-dialog.css" rel="stylesheet" />
+<body>
+    <div class="menu ">
+        <div class="logo-menu">
+            <div class="logo-bar icon-menu-bar"></div>
+            <div class="symbol-company icon-company"></div>
+        </div>
+        <div class="menu-bar">
+            <div class="function">
+                <div class="logo-function icon-content-1"></div>
+                <div class="name-function">Tổng quan</div>
+            </div>
+            <div class="function">
+                <div class="logo-function icon-content-2"></div>
+                <div class="name-function">Báo cáo</div>
+            </div>
+            <div class="function">
+                <div class="logo-function icon-content-1"></div>
+                <div class="name-function">Mua hàng</div>
+            </div>
+            <div class="function">
+                <div class="logo-function icon-content-3"></div>
+                <div class="name-function">Danh mục Khách hàng</div>
+            </div>
+            <div class="function">
+                <div class="logo-function icon-content-3"></div>
+                <div class="name-function">Danh mục Khách hàng</div>
+            </div>
+            <div class="function">
+                <div class="logo-function icon-content-4"></div>
+                <div class="name-function">Thiết lập hệ thống</div>
+            </div>
+        </div>
+    </div>
+    <div class="header ">
+        <select class="resraunt-branch">
+            <option value="value">Nhà hàng Biển Đông</option>
+        </select>
+        <div class="info-account">
+            <div class="avatar-account icon-avatar"></div>
+            <div class="name-account">Nguyễn Thành Long An</div>
+            <div class="menu-account icon-menu-account"></div>
+        </div>
+    </div>
+    <div class="content ">
+        <div class="header-content">
+            <div class="title-content">Danh sách Khách hàng</div>
+            <button id="add-dialog-button" class="add-customer button-first icon-add content-button-first">Thêm Khách Hàng</button>
+        </div>
+        <div class="content-tool-bar">
+            <input type="text" placeholder="Tìm kiếm theo Mã, Tên Khách hàng" class="icon-search input-icon search-bar" />
+            <button class="button-second refesh-customer icon-refesh"></button>
+        </div>
+        <div class="grid">
+            <table id="tbl">
+                <thead>
+                    <tr>
+                        <th>Mã Khách hàng</th>
+                        <th>Họ và Tên</th>
+                        <th>Giới Tính</th>
+                        <th>Ngày Sinh</th>
+                        <th>Nhóm Khách hàng</th>
+                        <th>Điện Thoại</th>
+                        <th>Email</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KH0123120312</td>
+                        <td>Trần Lê Minh</td>
+                        <td>Nam</td>
+                        <td>10/03/2000</td>
+                        <td></td>
+                        <td>0912378124</td>
+                        <td>hiensd9@gmail.com</td>
+                        <td>số 24, ngõ 4, đường Phạm Ngọc Thạch, Tp.Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH0123120312</td>
+                        <td>Trần Lê Minh</td>
+                        <td>Nam</td>
+                        <td>10/03/2000</td>
+                        <td></td>
+                        <td>0912378124</td>
+                        <td>hiensd9@gmail.com</td>
+                        <td>số 24, ngõ 4, đường Phạm Ngọc Thạch, Tp.Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH0123120312</td>
+                        <td>Trần Lê Minh</td>
+                        <td>Nam</td>
+                        <td>10/03/2000</td>
+                        <td></td>
+                        <td>0912378124</td>
+                        <td>hiensd9@gmail.com</td>
+                        <td>số 24, ngõ 4, đường Phạm Ngọc Thạch, Tp.Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>KH0123120312</td>
+                        <td>Trần Lê Minh</td>
+                        <td>Nam</td>
+                        <td>10/03/2000</td>
+                        <td></td>
+                        <td>0912378124</td>
+                        <td>hiensd9@gmail.com</td>
+                        <td>số 24, ngõ 4, đường Phạm Ngọc Thạch, Tp.Hà Nội</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="paging-bar">
+            <div class="notice-left">Hiển thị 1-10/1000 Khách hàng</div>
+            <div class="page-direct">
+                <div class="icon-first-page page-arrow"></div>
+                <div class="icon-prev-page page-arrow"></div>
+                <div class="page-num">1</div>
+                <div class="page-num">2</div>
+                <div class="page-num">3</div>
+                <div class="page-num">4</div>
+                <div class="icon-next-page page-arrow"></div>
+                <div class="icon-last-page page-arrow"></div>
+            </div>
+            <div class="notice-right">10 Khách hàng/trang</div>
+        </div>
+    </div>
+
+    <!-- add customer dialog-->
+    <div id="add-dialog" title="Thông tin khách hàng">
+        <div class="up-dialog">
+            <div class="avatar icon-avatar-default"></div>
+            <div class="up-input">
+                <div class="line">
+                    <div class="title-input">
+                        <div class="title-left-side">Mã Khách hàng(*)</div>
+                        <div class="title-right-side">Họ và tên(*)</div>
+                    </div>
+                    <div class="input-bar">
+                        <input type="text" class="input-left-side content-input " />
+                        <input type="text" class="input-right-side  content-input " />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="title-input">
+                        <div class="title-left-side">Mã thẻ thành viên</div>
+                        <div class="title-right-side">Nhóm Khách hàng</div>
+                    </div>
+                    <div class="input-bar">
+                        <input type="text" class="input-left-side content-input " />
+                        <select class="resraunt-branch ">
+                            <option value="1">Khách VIP</option>
+                            <option value="2">Khách NOR</option>
+                        </select>
+                    </div>
+                </div>      
+                <div class="line">
+                    <div class="title-input">
+                        <div class="title-left-side">
+                            Ngày sinh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="title-right-side">Giới tính</div>
+                    </div>
+                    <div class="input-bar">
+                        <input type="text" class="input-left-side content-input " />
+                        <input type="checkbox" name="Nam" value="Nam" class="ck-right" /> <label>Nam</label>
+                        <input type="checkbox" name="Nữ" value="Nữ"  class="ck-left" /> <label>Nữ</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-dialog">
+            <div class="line">
+                <div class="title-input">
+                    <div class="title-left-side">
+                        Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="title-right-side">Số Điện Thoại(*)</div>
+                </div>
+                <div class="input-bar">
+                    <input type="text" class="input-left-side content-input-left " />
+                    <input type="text" class="input-right-side  content-input-right " />
+                </div>
+            </div>
+            <div class="line">
+                <div class="title-input">
+                    <div class="title-left-side">
+                        Tên công ty
+                    </div>
+                    <div class="title-right-side">Mã số thuế</div>
+                </div>
+                <div class="input-bar">
+                    <input type="text" class="input-left-side content-input-left " />
+                    <input type="text" class="input-right-side content-input-right " />
+                </div>
+            </div>
+            <div class="line">
+                <div class="title-input">
+                    <div class="title-left-side">
+                        Địa chi
+                    </div>
+                </div>
+                <div class="input-bar">
+                    <input type="text" class="content-input-address" />
+                </div>
+            </div>
+        </div>
+        <div class="button-bar">
+            <button class="button-second cancel-button" id="cancel-dialog-button">Hủy</button>
+            <button class="button-first save-button" >Lưu</button> 
+        </div>
+    </div>
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="../js/page/customer.js"></script>
+</body>
+</html>

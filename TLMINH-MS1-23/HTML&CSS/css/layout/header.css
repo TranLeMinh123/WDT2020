@@ -1,0 +1,52 @@
+﻿.header {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 59px;
+    border-bottom: 1px solid #EBF9F4;
+    display: flex;
+}
+
+/*resraunt-branch*/
+.resraunt-branch {
+    width: 200px;
+    outline: none;
+    border:none;
+}
+
+/*account user*/
+.info-account {
+    position: absolute;
+    right: 16px;
+    width:200px;
+    height:59px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-account {
+    height:24px;
+    width:24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name-account {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    max-width: 120px;
+    padding-right:16px;
+}
+
+.avatar-account {
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 8px;
+}
+
+

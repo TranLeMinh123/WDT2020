@@ -1,0 +1,56 @@
+﻿.menu {
+    width: 199px;
+    height: 100vh;
+    border-right: 1px solid #EBF9F4;
+}
+
+/*header-menu*/
+.logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.logo-bar {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.symbol-company {
+    height: 24px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+/*content menu*/
+.function {
+    height: 44px;
+    border-bottom: 1px solid #EBF9F4;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.function:hover {
+    background-color: #EBF9F4;
+}
+
+.function .logo-function {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 24px;
+}
+
+.function .name-function {  
+    height: 20px;
+    padding-left: 16px;
+}
